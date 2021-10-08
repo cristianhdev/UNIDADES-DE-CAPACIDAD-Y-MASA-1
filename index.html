@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unidades de capacidad y masa</title>
+        <link rel="stylesheet" type="text/css" href="node_modules/animate.css/animate.min.css">
+        <link rel="preload" href="styles.css" as="styles">
+        <link rel="preload" href="script.js" as="script">
+        <script src="gsap.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body onload="init()">
+
+        <div class="contendor-bienvenida">
+                <div class="contenido-actividad-bienvenida">
+                        <div class="recuadro-explicacion-1 animate__animated animate__fadeIn" id="slide-1">
+                                <div class="titulo-interactiva">
+                                        <h1 class="animate__animated animate__fadeInLeft"
+                                                style="text-shadow: 2px 3px 2px #a0a0ba;">
+                                                Unidades de Capacidad</h1>
+                                        <p class="animate__animated animate__fadeIn">Bienvenidos, a continuación
+                                                podremos
+                                                practicar de manera interactiva la conversión
+                                                entre unidades de capacidad. </b>
+                                        </p>
+                                </div>
+
+                        </div>
+                        <div class="recuadro-explicacion-2 animate__animated animate__fadeIn" id="slide-2">
+                                <div class="contenedor-a1">
+                                        <p>Las unidades de capacidad sirven para medir el espacio vacío de algún
+                                                recipiente o
+                                                cosa.
+                                                Sirven para medir líquidos y/o la cantidad de volumen que puede contener
+                                                un
+                                                recipiente.
+                                                La unidad fundamental de capacidad es el litro.
+                                        </p>
+                                        <p>
+                                                El litro tiene múltiplos ( unidades mayores que él) y submúltiplos (
+                                                unidades más pequeñas).
+                                        </p>
+                                        <div class="contenedor">
+                                                <div class="row">
+                                                        <div class="grids-title">
+                                                                MÚLTIPLOS
+                                                        </div>
+                                                        <div class="grids">
+                                                                <div>Kilolitro</div>
+                                                                <div>1 Kl = 1.000 l</div>
+                                                                <div>Hectolitro</div>
+                                                                <div>1hl = 1.00 l</div>
+                                                                <div>Decalitro</div>
+                                                                <div>1hl = 10 l</div>
+                                                        </div>
+                                                </div>
+                                                <div class="row">
+                                                        <div class="grids-title">
+                                                                SUBMÚLTIPLOS
+                                                        </div>
+                                                        <div class="grids">
+
+                                                                <div>Decilitro</div>
+                                                                <div>1dl = 0,1 l</div>
+                                                                <div>Centilitro</div>
+                                                                <div>1hl = 0,01 l</div>
+                                                                <div>Mililitro</div>
+                                                                <div>1 hl = 0,001 l</div>
+                                                        </div>
+                                                </div>
+
+                                        </div>
+                                </div>
+
+
+
+
+
+                        </div>
+                        <div class="recuadro-explicacion-3 animate__animated animate__fadeIn" id="slide-3">
+
+                                <h1>Escalares de las unidades de Capacidad</h1>
+                                <div class="contenedor-a1">
+                                        <div class="contenedor-textos-imagen">
+                                                <div class="imagen-situacion">
+                                                        <img class="responsive-imagen"
+                                                                src="./assets/imagenes/Unidades.png" />
+                                                </div>
+                                                <div class="texto-situacion-descripcion">
+                                                        <p>Para convertir de una unidad más grande a otra más pequeña,
+                                                                tenemos que Multiplicar (x).
+                                                        </p>
+                                                        <p>
+                                                                Para convertir de una unidad más pequeña a una más
+                                                                grande,
+                                                                tenemos que Dividir (:).
+                                                        </p>
+                                                </div>
+                                        </div>
+                                </div>
+
+
+
+
+                        </div>
+                        <div class="recuadro-explicacion-4 animate__animated animate__fadeIn" id="slide-4">
+
+                                <div class="contenedor-a1">
+                                        <div class="contenedor-textos-imagen2">
+                                                <div>
+                                                        <img class="responsive-imagen"
+                                                                src="./assets/imagenes/Unidades2.png" />
+                                                </div>
+
+                                                <div class="texto-situacion-descripcion">
+                                                        <p>Cada unidad de capacidad es 10 veces mayor que la unidad
+                                                                inmediatamente inferior y 10 veces menor que la unidad
+                                                                inmediatamente superior</b>
+                                                        </p>
+
+
+                                                </div>
+                                        </div>
+                                </div>
+
+
+
+                        </div>
+                        <div class="recuadro-explicacion-5 animate__animated animate__fadeIn" id="slide-5">
+                                <p>
+                                        Completamos las casillas escribiendo los números y el signo de la operación que
+                                        se debe realizar para hacer la conversión de
+                                        unidad. Al finalizar comprobamos la respuesta y corrimos si es necesario, de lo
+                                        contrario continuamos con el siguiente ejercicio<br><br>
+                                        <b>Pon los miles con un punto (.) y los decimales con una coma (,)</b>
+                                </p>
+
+                                <div class="contenedor-a4">
+                                        <span>Ejemplo:</span>
+                                        <div class="table-scrolling">
+                                              
+                                                <table class="customTable2">
+                                                        <tr>
+                                                                <td class="table-title">
+                                                                        Convertir 32,67 kilolitro a litro
+                                                                </td>
+                                                                <td>
+                                                                        <img
+                                                                                src="./assets/imagenes/triangulo-tabla.png" />
+                                                                </td>
+                                                                <td style="width:50px">
+                                                                        32,67
+                                                                </td>
+                                                                <td>
+                                                                        x
+                                                                        </th>
+                                                                <td>
+                                                                        1000
+                                                                </td>
+                                                                <td>
+                                                                        <img src="./assets/imagenes/igual.png" />
+                                                                </td>
+                                                                <td>
+                                                                        32.670
+                                                                </td>
+                                                                <td>
+                                                                        l
+                                                                </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="table-title">
+                                                                        Convertir 6,7 litro a hectolitro
+                                                                </td>
+                                                                <td>
+                                                                        <img
+                                                                                src="./assets/imagenes/triangulo-tabla.png" />
+                                                                </td>
+                                                                <td>6,7</td>
+                                                                <td>:</td>
+                                                                <td>100</td>
+                                                                <td>
+                                                                        <img src="./assets/imagenes/igual.png" />
+                                                                </td>
+                                                                <td>0.067</td>
+                                                                <td>hl</td>
+                                                        </tr>
+
+                                                </table>
+                                        </div>
+
+                                        <p>Para multiplicar usa la (x) minuscula, para el signo de dividir usa (:)</p>
+                                        <div class="table-scrolling">
+                                                <table id="tabla-4" class="customTable">
+                                                        <tr>
+                                                                <td style="width: 188px;" class="table-title">
+                                                                        Convertir <b>3,2 centilitro a litro</b>
+                                                                </td>
+                                                                <td>
+                                                                        <img
+                                                                                src="./assets/imagenes/triangulo-tabla.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width:30px">
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,:x]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                        </th>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <img src="./assets/imagenes/igual.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width: 30px;">
+                                                                        l
+                                                                </td>
+                                                                <td style="width: 40px;">
+                                                                        <div class="recuadro"></div>
+                                                                </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="table-title">
+                                                                        Convertir <b>5,8 litro a hectolitro</b>
+                                                                </td>
+                                                                <td>
+                                                                        <img
+                                                                                src="./assets/imagenes/triangulo-tabla.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9:x]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                        </th>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <img src="./assets/imagenes/igual.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width: 10px;">
+                                                                        hl
+                                                                </td>
+                                                                <td style="width: 40px;">
+                                                                        <div class="recuadro"></div>
+                                                                </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="table-title">
+                                                                        Convertir <b>12,5 mililitro a decalitro</b>
+                                                                </td>
+                                                                <td>
+                                                                        <img
+                                                                                src="./assets/imagenes/triangulo-tabla.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9:x]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                        </th>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <img src="./assets/imagenes/igual.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width: 10px;">
+                                                                        dal
+                                                                </td>
+                                                                <td style="width: 40px;">
+                                                                        <div class="recuadro"></div>
+                                                                </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="table-title">
+                                                                        Convertir <b>2,54 litro a centilitro</b>
+                                                                </td>
+                                                                <td>
+                                                                        <img
+                                                                                src="./assets/imagenes/triangulo-tabla.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9:x]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                        </th>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <img src="./assets/imagenes/igual.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width: 10px;">
+                                                                        cl
+                                                                </td>
+                                                                <td style="width: 40px;">
+                                                                        <div class="recuadro"></div>
+                                                                </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="table-title">
+                                                                        Convertir <b>45 litro a kilolitro</b>
+                                                                </td>
+                                                                <td>
+                                                                        <img
+                                                                                src="./assets/imagenes/triangulo-tabla.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9:x]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                        </th>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <img src="./assets/imagenes/igual.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width: 10px;">
+                                                                        l
+                                                                </td>
+                                                                <td style="width: 40px;">
+                                                                        <div class="recuadro"></div>
+                                                                </td>
+                                                        </tr>
+
+
+                                                </table>
+
+                                        </div>
+                                        <div class="mensajeActividad">
+                                                Corrige los errores
+                                        </div>
+                                        <div onclick="comprobar()" class="button">Comprobar&nbsp;✍</div>
+                                </div>
+                        </div>
+                        <div class="recuadro-explicacion-6 animate__animated animate__fadeIn" id="slide-6">
+                                <p>
+                                        Completamos las casillas escribiendo los números y el signo de la operación que
+                                        se debe realizar para hacer la conversión de
+                                        unidad. Al finalizar comprobamos la respuesta y corrimos si es necesario, de lo
+                                        contrario continuamos con el siguiente ejercicio<br><br>
+                                        <b>Pon los miles con un punto (.) y los decimales con una coma (,)</b>
+                                </p>
+
+                                <div class="contenedor-a5">
+                                        <div class="table-scrolling">
+                                                <table id="tabla-5" class="customTable">
+                                                        <tr>
+                                                                <td class="table-title">
+                                                                        Convertir <b>8,4 Mililitro a Hectolitro</b>
+                                                                </td>
+                                                                <td>
+                                                                        <img
+                                                                                src="./assets/imagenes/triangulo-tabla.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width:30px">
+                                                                        <input type="text" class="input">
+                                                                        </th>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <img src="./assets/imagenes/igual.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width: 10px;">
+                                                                        hl
+                                                                </td>
+                                                                <td style="width: 30px;">
+                                                                        <div class="recuadro"></div>
+                                                                </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="table-title">
+                                                                        Convertir <b>6,2 kilolitro a Litro</b>
+                                                                </td>
+                                                                <td>
+                                                                        <img
+                                                                                src="./assets/imagenes/triangulo-tabla.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input">
+                                                                        </th>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <img src="./assets/imagenes/igual.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width: 10px;">
+                                                                        l
+                                                                </td>
+                                                                <td>
+                                                                        <div class="recuadro"></div>
+                                                                </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="table-title">
+                                                                        Convertir <b>15,7 Decalitro a Litro</b>
+                                                                </td>
+                                                                <td>
+                                                                        <img
+                                                                                src="./assets/imagenes/triangulo-tabla.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input">
+                                                                        </th>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <img src="./assets/imagenes/igual.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width: 10px;">
+                                                                        l
+                                                                </td>
+                                                                <td style="width: 30px;">
+                                                                        <div class="recuadro"></div>
+                                                                </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="table-title">
+                                                                        Convertir <b>500 Centilitro a Litro</b>
+                                                                </td>
+                                                                <td>
+                                                                        <img
+                                                                                src="./assets/imagenes/triangulo-tabla.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input">
+                                                                        </th>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <img src="./assets/imagenes/igual.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width: 10px;">
+                                                                        l
+                                                                </td>
+                                                                <td style="width: 30px;">
+                                                                        <div class="recuadro"></div>
+                                                                </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="table-title">
+                                                                        Convertir <b>50 Decilitro a Litro</b>
+                                                                </td>
+                                                                <td>
+                                                                        <img
+                                                                                src="./assets/imagenes/triangulo-tabla.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input">
+                                                                        </th>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width: 15px;">
+                                                                        <img src="./assets/imagenes/igual.png" />
+                                                                </td>
+                                                                <td>
+                                                                        <input type="text" class="input"
+                                                                                oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                                                </td>
+                                                                <td style="width: 15px;">
+                                                                        l
+                                                                </td>
+                                                                <td style="width: 30px;">
+                                                                        <div class="recuadro"></div>
+                                                                </td>
+
+                                                        </tr>
+
+
+                                                </table>
+
+                                        </div>
+                                        <div class="mensajeActividad">
+                                                Corrige los errores
+                                        </div>
+                                        <div onclick="comprobar()" class="button">Comprobar&nbsp;✍</div>
+                                </div>
+
+
+
+
+
+                        </div>
+                        <div style="height: 38px;width: 100%;display: flex;justify-content: space-between;">
+                                <div onclick="atras()" id="atras" class="button" />◀&nbsp;Atras
+                        </div>
+                        <!-- <div class="button" onclick="cortar()">Cortar</div> -->
+                        <div onclick="siguiente()" id="siguiente" class="button" />Siguiente&nbsp;▶
+                </div>
+
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
